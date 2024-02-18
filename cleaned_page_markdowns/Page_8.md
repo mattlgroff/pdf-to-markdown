@@ -1,0 +1,9 @@
+## If pharma companies want to generate value from generative AI as fast as the technology allows, they need to ensure that the organization is ready.
+
+Companies can take a three-tiered approach to prime their operating model for generative AI at scale:
+
+- Determine your strategic posture. Leading organizations will establish decision-making and funding models that prioritize high-return use cases. In particular, they will ensure that those use cases fit within their investment themes around bold bets for the future of the business. When it comes to funding, organizations often bill generative AI investments to IT, although they typically deliver the anticipated savings to the respective functional budgets. Winning companies won’t let these conflicts stand in the way of adoption. Instead, they will find ways to incentivize business unit leaders to invest in disruptive, value-generating AI initiatives.
+- Lead through change. Generative AI at scale requires strong internal leadership and cross-functional alignment. The best companies will establish an organizational center of gravity with several executives who act as generative AI champions. The team holds the organization accountable to its roadmap and decision-making model.
+- Build the foundations. In addition to the right technology, data, and models, generative AI at scale requires reorienting the organization to support big visions.
+  - Reshape your talent strategy. Many pharma companies continue to struggle with hiring data scientists for AI initiatives. Given the shortage of talent with generative AI expertise, companies that want to be included among the next generation of AI leaders will need to recruit aggressively now.
+  - Forge strategic partnerships. As they build up their stable of in-house talent, leaders will partner with external vendors for support.

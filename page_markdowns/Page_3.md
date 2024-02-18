@@ -1,0 +1,5 @@
+## The state of AI in pharma
+
+Classical data science and machine learning are nothing new to pharma executives who have been investing in productivity enhancements for years, primarily in the drug discovery space. Bain research shows that 54% of pharma companies have automated biomedical literature review solutions, and 46% are using AI as part of their process to find potential disease targets.
+
+Now, generative AI is broadening the aperture of use cases with new opportunities across the value chain. Biomedical literature review and preclinical research remain among the most popular use case areas, although we’re also seeing high investment in IT and competitive intelligence (see Figure 2). Within these top areas, more than 60% of executives, on average, say that they have at least a proof of concept in development, and around 10% have already rolled out tools.
