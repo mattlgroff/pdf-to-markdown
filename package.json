@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@supabase/supabase-js": "^2.39.7",
-    "csv-parser": "^3.0.0"
+    "csv-parser": "^3.0.0",
+    "openai": "^4.28.4"
   }
 }

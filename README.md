@@ -22,6 +22,8 @@ The final stitched output can be found in `converted-pdf.md`.
 
 7. **Upload to Supabase (`insert_embeddings_supabase.js`)**: Run your `migrations.sql` migrations in Supabase in the query editor, I suggest doing them one at a time. You will need to `npm install` and then `node insert_embeddings_supabase.js` to insert the embeddings into the `documents` table in Supabase.
 
+8. **Search (`search.js`)**: Run `node search.js` to search for a query in the `documents` table in Supabase. This will return the most relevant documents based on the query. Play with the `match_threshold` and the `query` to see how the results change.
+
 ## Getting Started
 
 ### Prerequisites
