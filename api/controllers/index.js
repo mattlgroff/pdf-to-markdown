@@ -58,12 +58,6 @@ export const handleOpenAIChatCompletion = async (req) => {
           content: user_query,
       };
 
-      const secondUserMessage = {
-          role: 'user',
-          content: "Cite your sources.",
-      };
-      
-
       console.log('System Message:', systemMessage);
 
       console.log('User Message:', userMessage);
@@ -72,7 +66,7 @@ export const handleOpenAIChatCompletion = async (req) => {
       // Start the OpenAI API stream
       const openai_api_stream = await openai.chat.completions.create({
           model: 'gpt-4',
-          messages: [systemMessage, userMessage, secondUserMessage],
+          messages: [systemMessage, userMessage],
           stream: true,
       });
 
