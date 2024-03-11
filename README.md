@@ -16,12 +16,20 @@ The final stitched output can be found in `converted-pdf.md`.
 
 4. **Stitch Markdown Pages (`stitch_markdown_pages.py`)**: Combines all Markdown files from `cleaned_page_markdowns` into a single Markdown document (`converted-pdf.md`), with page numbers inserted before each page's content.
 
+5. **Chunker (`chunker.py`)**: Splits the Markdown document into smaller chunks, which we will convert to embeddings in the next step. The chunked Markdown files are saved in a new file called `chunks.csv`.
+
+6. **Embed (`embed.py`)**: Converts the chunks of Markdown into embeddings using OpenAI's ADA 3 Small model. The embeddings are saved in a new file called `chunks_with_embeddings.csv`.
+
+7. **Upload to Supabase (`insert_embeddings_supabase.js`)**: Run your `migrations.sql` migrations in Supabase in the query editor, I suggest doing them one at a time. You will need to `npm install` and then `node insert_embeddings_supabase.js` to insert the embeddings into the `documents` table in Supabase.
+
 ## Getting Started
 
 ### Prerequisites
 
 - Python 3.12 or newer
+- Node.js LTS or newer
 - OpenAI API Key: You need an API key from OpenAI to use the GPT-4 Vision model. You can obtain it from your OpenAI account.
+- Supabase API Key: You need an API key from Supabase to insert the embeddings into the `documents` table. You can obtain it from your Supabase account.
 
 ### Installation
 
@@ -29,6 +37,7 @@ First, ensure you have the required libraries installed:
 
 ```bash
 pip install pdf2image requests openai
+npm install
 ```
 
 ### Usage

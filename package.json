@@ -1,0 +1,15 @@
+{
+  "name": "pdf-to-markdown",
+  "version": "1.0.0",
+  "description": "This utility converts PDF documents to Markdown format, leveraging the capabilities of OpenAI's GPT-4 Vision model for image-based content recognition and conversion. It's designed to handle the conversion process in multiple steps for enhanced accuracy and scalability.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.7",
+    "csv-parser": "^3.0.0"
+  }
+}
