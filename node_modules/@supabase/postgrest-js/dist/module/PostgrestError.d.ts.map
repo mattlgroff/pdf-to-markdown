@@ -1,1 +1,0 @@
-{"version":3,"file":"PostgrestError.d.ts","sourceRoot":"","sources":["../../src/PostgrestError.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,cAAc,IAAI,eAAe,EAAE,MAAM,SAAS,CAAA;AAEhE,MAAM,CAAC,OAAO,OAAO,cAAe,SAAQ,KAAM,YAAW,eAAe;IAC1E,OAAO,EAAE,MAAM,CAAA;IACf,IAAI,EAAE,MAAM,CAAA;IACZ,IAAI,EAAE,MAAM,CAAA;gBAEA,OAAO,EAAE,eAAe;CAOrC"}
