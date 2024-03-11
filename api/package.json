@@ -1,0 +1,14 @@
+{
+  "name": "api",
+  "module": "index.js",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "ai": "^3.0.8"
+  }
+}
