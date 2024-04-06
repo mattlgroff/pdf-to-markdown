@@ -6,7 +6,14 @@ Note: the included `convert-me-to-markdown.pdf` is a sample PDF made by saving t
 
 The final stitched output can be found in `converted-pdf.md`.
 
-## Workflow Overview
+## Notebooks Overview
+There are two Jupyter notebooks in this repository:
+- [openai.ipynb](./notebooks/openai.ipynb): This goes through the PDF to JPEGs, JPEGs to Markdown, and Markdown cleanup steps using OpenAI GPT-4 Vision Preview and GPT-4 Turbo models. (NOTE: This requires an `OPENAI_API_KEY` environment variable to be set with your API key.)
+- [claude.ipynb](./notebooks/claude.ipynb): This goes through the PDF to JPEGs, JPEGs to Markdown, and Markdown cleanup steps using the Claude 3's Opus model. (NOTE: This requires an `ANTHROPIC_API_KEY` environment variable to be set with your API key.)
+
+My honest opinion is that the OpenAI GPT-4 Vision Preview and GPT-4 Turbo models are more accurate and provide better results than the Claude 3's Opus model. Claude 3 Opus missed a lot of text and struggled a lot with the cleanup task in my example pdf. Your documents may vary, so I recommend trying both models to see which one works best for you.
+
+## Manual Workflow Overview (Python Scripts)
 
 1. **PDF to Image Conversion (`image_splitter.py`)**: Converts each page of the input PDF into separate JPEG images, storing them in a folder named `page_jpegs`. Each image is named sequentially (`Page_1.jpeg`, `Page_2.jpeg`, etc.).
 
