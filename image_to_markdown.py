@@ -1,11 +1,12 @@
 import os
 import base64
-import requests
+from openai import OpenAI
 from pathlib import Path
 from dotenv import load_dotenv
 
 
 load_dotenv()
+client = OpenAI()
 
 api_key = os.environ.get("OPENAI_API_KEY")
 
@@ -16,10 +17,9 @@ def encode_image_to_base64(image_path):
 
 
 def image_to_markdown(base64_image):
-    headers = {"Content-Type": "application/json", "Authorization": f"Bearer {api_key}"}
-    payload = {
-        "model": "gpt-4o",
-        "messages": [
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
             {
                 "role": "user",
                 "content": [
@@ -34,15 +34,9 @@ def image_to_markdown(base64_image):
                 ],
             }
         ],
-        "max_tokens": 4096,
-    }
-    response = requests.post(
-        "https://api.openai.com/v1/chat/completions",
-        headers=headers,
-        json=payload,
-        timeout=10000,
-    ).json()
-    return response["choices"][0]["message"]["content"]
+        max_tokens=4096,
+    )
+    return response.choices[0].message.content
 
 
 def process_images_to_markdown(
